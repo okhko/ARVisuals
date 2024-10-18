@@ -27,6 +27,6 @@ This solution is ready to use and integrates well with existing AR libraries, ma
 
 I am focused on creating tools that are easy to use and immediately beneficial. ARVisuals can be used for educational purposes, product demonstrations, virtual showrooms, or simply making 3D content more engaging. The idea is to lower the barrier to entry for using AR.
 
-If you like this project and want to support its future development, any contribution is appreciated. You can make a donation at the following link: [Support the project](https://www.okhrymenko.com/donations).
+If you like this project and want to support me in its future development, any contribution is appreciated. You can make a donation at the following link: [Support me](https://www.okhrymenko.com/donations).
 
 Thank you for your support!
