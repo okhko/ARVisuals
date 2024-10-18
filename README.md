@@ -9,8 +9,7 @@
     <img src="https://raw.githubusercontent.com/okhko/ARVisuals/main/qr-code.png" width="150" height="150" alt="QR-код">
 </p>
 
-
-The ARVisuals project is an innovative solution for visualizing 3D models in augmented reality, aimed at improving user interaction with cutting-edge technologies. We strive to make augmented reality accessible to everyone by offering simple and convenient tools for integrating models across various devices.
+The ARVisuals project is a simple solution for visualizing 3D models in augmented reality. It helps make AR more accessible by providing easy-to-use tools for integrating models on different devices.
 
 ## Project Setup Instructions:
 
@@ -24,10 +23,10 @@ The ARVisuals project is an innovative solution for visualizing 3D models in aug
    Replace "models.glb" and "models.usdz" with the names of your models.
 4. Publish the project to make it available to users.
 
-Our solution is fully ready for use, thanks to integration with trusted libraries and augmented reality technologies, which significantly reduces development time and simplifies the deployment process for both developers and end users. 3D models can be hosted on GitHub, considering the 25 MB per file limit, or on third-party services for flexibility and ease of use.
+This solution is ready to use and integrates well with existing AR libraries, making it easy to deploy for both developers and end users. You can host 3D models on GitHub (with the 25 MB per file limit) or use third-party services for more flexibility.
 
-I believe that technology should be accessible to everyone and strive to create a platform where everyone can find useful tools and solutions. A lot of time, effort, and knowledge goes into creating a product that will be valuable and useful to many users.
+I am focused on creating tools that are easy to use and immediately beneficial. ARVisuals can be used for educational purposes, product demonstrations, virtual showrooms, or simply making 3D content more engaging. The idea is to lower the barrier to entry for using AR.
 
-If you are interested in this project and want to support its further development, I would be sincerely grateful for your help. You can make a donation at the following link: [Support the project](https://www.okhrymenko.com/donations).
+If you like this project and want to support its future development, any contribution is appreciated. You can make a donation at the following link: [Support the project](https://www.okhrymenko.com/donations).
 
-Thank you for your attention and support! Together, we can make technology more accessible and improve our world.
+Thank you for your support!
