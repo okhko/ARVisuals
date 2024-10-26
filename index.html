@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>okhrymenko</title>
+  <title>www.okhrymenko.com</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer@latest/dist/model-viewer.min.js"></script>
   <style>
     body, html {
@@ -28,14 +28,38 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      animation: smooth-pulse 2s infinite;
+      animation: bounce 2s infinite;
     }
-    @keyframes smooth-pulse {
+
+    #pulse-ring {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background-color: rgba(90, 155, 212, 0.3);
+      animation: pulse 2s infinite;
+      z-index: 9; 
+    }
+
+    @keyframes bounce {
       0%, 100% {
         transform: scale(1);
       }
       50% {
-        transform: scale(1.35);
+        transform: scale(1.1); 
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.7;
+      }
+      100% {
+        transform: scale(1.5);
+        opacity: 0;
       }
     }
   </style>
@@ -44,11 +68,14 @@
   <model-viewer
     src="models/models.glb"
     ios-src="models/models.usdz"
-    alt="3D модель"
+    alt="okhrymenko"
     ar
     ar-modes="scene-viewer quick-look"
     camera-controls
     auto-rotate>
+    
+    <div id="pulse-ring"></div>
+
     <button id="custom-ar-button" slot="ar-button">
       <img src="https://modelviewer.dev/shared-assets/icons/hand.png" alt="AR prompt" width="90" height="90">
     </button>
