@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
   <meta charset="UTF-8">
-  <title>3D Model</title>
+  <title>okhrymenko</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer@latest/dist/model-viewer.min.js"></script>
   <style>
     body, html {
@@ -14,23 +15,28 @@
       width: 100%;
       height: 100%;
     }
-    model-viewer::part(ar-button) {
-      width: 400px;
-      height: 400px;
+    #custom-ar-button {
+      width: 115px;
+      height: 115px;
       position: absolute;
       bottom: 20px;
       right: 20px;
       z-index: 10;
-      background-color: rgba(0, 123, 255, 0.8);
-      color: white;
+      background-color: transparent;
       border: none;
-      border-radius: 8px;
-      padding: 10px 20px;
-      font-size: 16px;
       cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: smooth-pulse 2s infinite;
     }
-    model-viewer::part(ar-button):hover {
-      background-color: rgba(0, 105, 217, 0.8);
+    @keyframes smooth-pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.15);
+      }
     }
   </style>
 </head>
@@ -38,14 +44,14 @@
   <model-viewer
     src="models/models.glb"
     ios-src="models/models.usdz"
-    alt="3D Model"
+    alt="3D модель"
     ar
     ar-modes="scene-viewer quick-look"
     camera-controls
-    autoplay
-    animation-name="Animation"
-    animation-loop
     auto-rotate>
+    <button id="custom-ar-button" slot="ar-button">
+      <img src="https://modelviewer.dev/shared-assets/icons/hand.png" alt="AR prompt" width="90" height="90">
+    </button>
   </model-viewer>
 </body>
 </html>
